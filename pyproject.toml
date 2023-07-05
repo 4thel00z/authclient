@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "authclient"
+version = "0.1.0"
+description = ""
+authors = ["4thel00z <4thel00z@gmail.com>"]
+readme = "README.md"
+packages = [
+    { include = "authclient" },
+]
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+httpx = "^0.24.1"
+pydantic = ">1.8.1,<2.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
